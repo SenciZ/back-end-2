@@ -17,7 +17,7 @@ module.exports = {
         const {address,price, imageURL} = req.body;
         const newHouse = {
             address,
-            price,
+            price: +price,
             imageURL,
             id: newID
         }
